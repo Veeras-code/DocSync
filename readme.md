@@ -2,7 +2,7 @@
 
 📘 DocSync — Smart PDF Comparison and Analysis
 Project Image <p align="center">
-  <img src="DocSync.png" alt="Project Image" width="600"/>
+  <img src="DocSync.png" alt="Project Image" width="900"/>
 </p>
 
 DocSync is a powerful web application for analyzing and comparing PDF documents using AI-based embedding models and cosine similarity scans. It also features a chatbot interface powered by cutting-edge LLMs—LLAMA 3 and Google Gemini—to interact with your documents seamlessly.
