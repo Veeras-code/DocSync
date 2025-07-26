@@ -62,7 +62,4 @@ DocSync is a powerful web application for analyzing and comparing PDF documents 
 - Chroma Vector DB
 - LangChain
 
-Let me know if you'd like help designing a badge set, demo GIFs, or tagline refinements like:
-“Empowering document insights through smart similarity scans and conversational AI.” 💡
 
-Want me to write your GitHub repo description or short summary? I’ve got more up my digital sleeve.
