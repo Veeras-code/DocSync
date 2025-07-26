@@ -10,25 +10,6 @@ Sentence-Level Cosine Similarity Scan
 Preprocessed Sentence-Level Cosine Similarity Scan
 ChatBot: Interact with the content of the PDFs using a chatbot powered by custom LLM models (LLAMA 3 and Google Gemini).
 Installation
-Clone the repository:
-
-git clone https://github.com/lakshya324/DocSense.git
-cd DocSense
-Install the required packages:
-
-pip install -r requirements.txt
-Set up environment variables: Create a .env file in the root directory and add your environment variables:
-
-GOOGLE_API_KEY=your-google-api-key
-DEPLOYED=False
-Set up LLAMA 3 and OLLAMA: Install LLAMA 3 (8B) and OLLAMA by running the following command:
-
-ollama run llama3
-Usage
-Run the Streamlit app:
-
-streamlit run app.py
-Navigate to the Home Page:
 
 Upload two PDFs to compare.
 Select the type of scan (Document-Level, Sentence-Level, Preprocessed Sentence-Level).
