@@ -1,7 +1,7 @@
 
 
 📘 DocSync — Smart PDF Comparison and Analysis
-Project Image <p align="center">
+ <p align="center">
   <img src="DocSync.png" alt="Project Image" width="1300" height="800"/>
 </p>
 
