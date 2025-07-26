@@ -38,7 +38,6 @@ Navigate to the ChatBot Page:
 
 Load the PDFs into the vector database.
 Interact with the PDFs using the chatbot by selecting an LLM model and entering your query.
-Project Structure
 ├── app.py                     # Main Streamlit application
 ├── compare.py                 # PDF comparison logic
 ├── pdf_extractor.py           # PDF text extraction logic
@@ -54,9 +53,6 @@ Project Structure
 ├── result.py                  # Chatbot result processing
 ├── requirements.txt           # Required Python packages
 └── .env                       # Environment variables (not included in the repository)
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 Acknowledgements
 Streamlit
 Meta Llama 3
