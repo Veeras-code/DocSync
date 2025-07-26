@@ -35,7 +35,7 @@ DocSync is a powerful web application for analyzing and comparing PDF documents 
 - Load PDFs into the vector database.
 - Choose a model (LLAMA 3 or Gemini).
 - Enter your query to chat with the PDFs.
-
+```
 📁 File Structure
 ├── app.py                     # Main Streamlit application
 ├── compare.py                 # PDF comparison logic
@@ -53,7 +53,7 @@ DocSync is a powerful web application for analyzing and comparing PDF documents 
 ├── requirements.txt           # Python dependencies
 └── .env                       # Environment variables (not included)
 
-
+```
 
 🙏 Acknowledgements
 - Streamlit
