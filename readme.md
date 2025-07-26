@@ -14,7 +14,7 @@ Installation
 Upload two PDFs to compare.
 Select the type of scan (Document-Level, Sentence-Level, Preprocessed Sentence-Level).
 Choose the embedding type (Count Vectorizer, TF-IDF Vectorizer, all-MiniLM-L6-v2).
-Click "Submit" to compare the PDFs and get the similarity score.
+Click "Submit" to compare the PDFs an   d get the similarity score.
 Navigate to the ChatBot Page:
 
 Load the PDFs into the vector database.
