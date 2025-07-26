@@ -1,8 +1,8 @@
-Absolutely! This project already has amazing depth, and with a few tweaks, your README can go from solid to stunning. Let’s polish it for clarity, visual appeal, and engagement. Here’s a refined version:
 
-📘 DocSense — Smart PDF Comparison and Analysis
+
+📘 DocSync — Smart PDF Comparison and Analysis
 Project Image <!-- Add an actual image link or placeholder -->
-DocSense is a powerful web application for analyzing and comparing PDF documents using AI-based embedding models and cosine similarity scans. It also features a chatbot interface powered by cutting-edge LLMs—LLAMA 3 and Google Gemini—to interact with your documents seamlessly.
+DocSync is a powerful web application for analyzing and comparing PDF documents using AI-based embedding models and cosine similarity scans. It also features a chatbot interface powered by cutting-edge LLMs—LLAMA 3 and Google Gemini—to interact with your documents seamlessly.
 
 🚀 Features
 - 🧠 PDF Comparison Modes
@@ -53,7 +53,7 @@ DocSense is a powerful web application for analyzing and comparing PDF documents
 ├── requirements.txt           # Python dependencies
 └── .env                       # Environment variables (not included)
 
-
+
 
 🙏 Acknowledgements
 - Streamlit
