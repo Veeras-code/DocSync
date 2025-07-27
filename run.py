@@ -1,6 +1,8 @@
 import sys
 print("Python executable:", sys.executable)
-
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 #import onnxruntime
 #print("onnxruntime version:", onnxruntime.__version__)
 
