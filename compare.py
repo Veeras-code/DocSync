@@ -10,7 +10,10 @@ class PdfCompare:
 
 
     def quick_scan(self, embeddings=2):
+        if not self.pdf1.strip() or not self.pdf2.strip():
+                raise ValueError("One or both input strings are empty or invalid.")
         if embeddings == 0:
+            
             return CountVectorizer.count_vectorizer(self.pdf1, self.pdf2)
         elif embeddings == 1:
             return TfidfVectorizer.tfidf_vectorizer(self.pdf1, self.pdf2)
