@@ -1,52 +1,35 @@
-import os
 import chromadb
-from chromadb.config import Settings
 from text_preprocessing import segmentation
 
-# Ensure persistence directory exists
-os.makedirs("./chroma", exist_ok=True)
-
-# Initialize ChromaDB client with duckdb backend
-client = chromadb.Client(Settings(
-    chroma_db_impl="duckdb+parquet",
-    persist_directory="./chroma"
-))
-
-# Create or reset collection
-collection_name = "pdf"
+client = chromadb.Client()
 try:
-    collection = client.create_collection(collection_name)
+    collection = client.create_collection("pdf")
 except:
-    client.delete_collection(collection_name)
-    collection = client.create_collection(collection_name)
+    collection = client.delete_collection("pdf")
+    collection = client.create_collection("pdf")
+
 
 def load_pdf(pdf1, pdf2):
-    data = {
-        0: segmentation(pdf1),
-        1: segmentation(pdf2)
-    }
+    data = {}
+    data[0] = segmentation(pdf1)
+    data[1] = segmentation(pdf2)
 
     for i in range(2):
-        chunks = data[i]
-        if not chunks:
-            print(f"⚠️ Warning: No content found in PDF {i+1}, skipping.")
-            continue
-
-        print(f"✅ Adding PDF {i+1} to collection — {len(chunks)} segments")
-
+        print(f"Adding PDF {i+1} to collection")
         collection.add(
-            ids=[f"pdf{i}_{j}" for j in range(len(chunks))],
-            documents=chunks,
-            metadatas=[{"pdf": i} for _ in range(len(chunks))]
+            ids=[f"pdf{i}_{j}" for j in range(len(data[i]))],
+            documents=data[i],
+            metadatas=[{"pdf": i} for _ in range(len(data[i]))],
         )
+
 
 def query(query: str, n_results=10):
     results = collection.query(query_texts=[query], n_results=n_results)
 
     output = []
-    for i in range(len(results['documents'][0])):
-        pdf_num = results['metadatas'][0][i].get('pdf', -1) + 1
-        doc_text = results['documents'][0][i]
-        output.append(f"from PDF {pdf_num} : {doc_text}")
+    for i in range(n_results):
+        output.append(
+            f"from PDF {results['metadatas'][0][i]['pdf']+1} : {results['documents'][0][i]}"
+        )
 
     return output
