@@ -1,8 +1,8 @@
 import sys
 print("Python executable:", sys.executable)
 
-import onnxruntime
-print("onnxruntime version:", onnxruntime.__version__)
+#import onnxruntime
+#print("onnxruntime version:", onnxruntime.__version__)
 
 import os
 import streamlit as st
