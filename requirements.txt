@@ -1,0 +1,11 @@
+python-dotenv
+streamlit
+chromadb
+langchain
+langchain_community
+google-generativeai
+nltk
+PyPDF2
+scikit-learn
+pysqlite3-binary
+onnxruntime
