@@ -36,7 +36,7 @@ scans = (
 # Create a sidebar for navigation
 with st.sidebar:
     st.title("Navigation")
-    selected_page = st.radio("Go to", ["Home", "ChatBot"],key="Navigation_radio")
+    selected_page = st.radio("Go to", ["Home", "ChatBot"],key="page_selector")
 
 # HOME PAGE
 if selected_page == "Home":
